@@ -1,22 +1,4 @@
 repeat wait() until game:IsLoaded(5)
-local function ClickGuiButtonNew(Button)
-        if typeof(Button) ~= "Instance" then return end;
-        game:GetService("VirtualInputManager"):SendMouseButtonEvent(Button.AbsolutePosition.X + Button.AbsoluteSize.X/2, Button.AbsolutePosition.Y + 50, 0, true, Button, 1);
-        game:GetService("VirtualInputManager"):SendMouseButtonEvent(Button.AbsolutePosition.X + Button.AbsoluteSize.X/2, Button.AbsolutePosition.Y + 50, 0, false, Button, 1);
-    end
-    ClickGuiButtonNew(game.Players.LocalPlayer.PlayerGui.IntroGui.Continue.TextLabel)
-
-wait(5)
-
-local function ClickGuiButtonNew(Button)
-    if typeof(Button) ~= "Instance" then return end;
-    game:GetService("VirtualInputManager"):SendMouseButtonEvent(Button.AbsolutePosition.X + Button.AbsoluteSize.X/2, Button.AbsolutePosition.Y + 50, 0, true, Button, 1);
-    game:GetService("VirtualInputManager"):SendMouseButtonEvent(Button.AbsolutePosition.X + Button.AbsoluteSize.X/2, Button.AbsolutePosition.Y + 50, 0, false, Button, 1);
-end
-ClickGuiButtonNew(game.Players.LocalPlayer.PlayerGui.CustomizeGui.Play.TextLabel)
-
-wait(5)
-
 local uis = game:GetService("UserInputService")
 local Key = "G"
 local Key2 = "H"
